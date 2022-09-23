@@ -145,35 +145,40 @@ a:hover {
 }
 
 .section-navbar .active {
-  top: 120px !important;
+  right: 0 !important;
 }
 
 @media only screen and (max-width: 912px) {
   .nav-menu {
     position: fixed;
-    top: -100%;
-    background-color: var(--color-dark);
-    width: 100%;
-    right: 0;
+    top: 120px;
+    background-color: var(--color-white);
+    width: 50%;
+    height: 100%;
+    right: -100%;
     display: block !important;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-top-left-radius: 20px;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-    border-radius: 10px;
   }
   .nav-menu a {
-    color: var(--color-white) !important;
+    text-align: right !important;
     display: block !important;
     padding-top: 10px;
-    text-align: center;
+    margin-left: 10px;
   }
   .nav-menu i {
+    margin-left: 80% !important;
     color: var(--bg-color);
-    background-color: var(--color-white) !important;
-    margin-left: 45%;
+    background-color: var(--color-dark) !important;
+  }
+  .nav-menu .login-button {
+    background-color: var(--color-dark) !important;
+    color: var(--color-white) !important;
   }
   .menu-toggle-btn {
     display: -webkit-box !important;
@@ -536,8 +541,8 @@ a:hover {
 }
 
 .section-shop {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-image: url("../image/Layer 8.png");
   background-repeat: no-repeat;
 }
